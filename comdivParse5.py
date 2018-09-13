@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jun 11 15:06:07 2018
-
+# Задача спасить вторую цену товара, описание, тех характеристики и картинки определенных направлений с двух сайтов поставщиков.
 @author: @specmihey
 """
 import logging
@@ -590,62 +590,3 @@ with codecs.open('comdiv.csv', 'a', 'utf-8') as csvfile:
     writer = csv.writer(csvfile, delimiter=';')
     writer.writerows(data_out) 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
