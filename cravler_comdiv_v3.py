@@ -19,6 +19,7 @@ import urllib.request
 from datetime import datetime
 from fake_useragent import UserAgent
 UserAgent().chrome
+#your directory for files
 os.chdir('C:\\Users\\user\\Documents\\Курсы Мэриленда\\Data Science Specialization\\Python_for_Beginners\\seo_Beautiful')
 base_url = "http://rvi-cctv.ru"
 
@@ -60,10 +61,6 @@ for page in items:
                 numPattern = re.sub("\D", "", price_v2)
                 price_v3 = int(numPattern)
 
-                
-#            price_v2 = str(price[1])
-#            numPattern = re.sub("\D", "", price_v2)
-#            price_v3 = int(numPattern)
             # --- получение Изображений товара
             image = soup.find_all(lambda tag: tag.name == 'a' and tag.get('class') == ['fancybox'])
             images = image[:3]
@@ -87,8 +84,6 @@ for page in items:
             # save the data in tuple
             data_out.append((id_,name,price_v3,text_body,images_base,tds)) #no tuple
             # open a csv file with append, so old data will not be erased
-
-
 
 import csv 
 import codecs  
